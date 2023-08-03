@@ -103,9 +103,9 @@ h6 {
 }
 
 #header .logo img {
-  padding: 0;
+  padding: 10px;
   margin: 0;
-  max-height: 40px;
+  max-height: 80px;
 }
 
 .scrolled-offset {
@@ -578,6 +578,43 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+#investment {
+  background: #115da7;
+}
+
+#investment .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color:#fff;
+  position: relative;
+  z-index: 2;
+}
+
+#investment .section-title span {
+  position: absolute;
+  top: 30px;
+  color: #2ea2dc;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+#investment .section-title p {
+  color: white;
+}
+
+.investment-img {
+  max-width: 200px;
+  object-fit: contain;
+}
+
 .features .card {
   border-radius: 5px;
   overflow: hidden;
@@ -585,6 +622,12 @@ section {
   background: #f7f7f7;
   position: relative;
   transition: 0.3s;
+}
+
+.features-img {
+  width: 100%;
+  aspect-ratio: 5 / 3;  /* defining the aspect ratio of the imaage */
+  object-fit: cover;    /* making sure the image isn't distorted */
 }
 
 .features .card-body {
@@ -758,6 +801,10 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+.portfolio-img{
+  width: '100%';
 }
 
 .portfolio .portfolio-wrap::before {
